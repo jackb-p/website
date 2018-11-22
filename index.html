@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Jack Bond-Preston</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/uikit.min.css" />
+	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">  
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">  
+	<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">  
+</head>
+<body>
+	<script src="js/uikit.min.js"></script>
+	<script src="js/uikit-icons.min.js"></script>
+	
+	<div style="height: 100%">
+		<div class="uk-section uk-section-secondary">
+			<div class="uk-container">
+				<div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+					<div>
+						<h1 class="uk-heading-primary">
+							<img src="SVG/logo-outline.svg" uk-svg>
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="uk-section uk-section-default">
+			<div class="uk-container uk-container-large">
+				<div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+					<div>
+						<h2 class="uk-heading-divider">
+							Contact
+						</h2>
+						<div class="uk-child-width-1@s uk-grid-collapse uk-text-center" uk-grid>
+							<div>
+								<div class="uk-tile uk-tile-default">
+									<p class="uk-h4">
+										<a href="jackbondpreston@outlook.com">Email</a>
+									</p>
+								</div>
+							</div>
+							<div>
+								<div class="uk-tile uk-tile-muted">
+										<p class="uk-h4">
+											<a href="https://www.linkedin.com/in/jack-bond-preston-922706150/">LinkedIn</a>
+										</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h2 class="uk-heading-divider">
+							Open Source
+						</h2>
+						<div class="uk-child-width-1-2@s uk-grid-collapse uk-text-center" uk-grid>
+							<div class="uk-width-1@m">
+								<div class="uk-tile uk-tile-default">
+									<p class="uk-h4">
+										<a href="https://github.com/jackb-p">Github</a>
+									</p>
+								</div>
+							</div>
+							<div>
+								<div class="uk-tile uk-tile-muted">
+									<p class="uk-h4">
+										<a href="https://gitlab.com/jackb-p">GitLab</a>
+									</p>
+								</div>
+							</div>
+							<div>
+								<div class="uk-tile uk-tile-muted">
+									<p class="uk-h4">
+										<a href="https://bitbucket.org/jackbondpreston/">Bitbucket</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="uk-section uk-section-secondary">
+		<div class="uk-container uk-container-large">
+			<h2 class="uk-heading-divider">
+				Projects
+			</h2>
+			<div class="uk-grid-match uk-child-width-1@m" uk-grid>
+				<div>
+					<div class="uk-inline">
+						<a href="https://gitlab.com/spe-potato/potato-library">
+							<img src="images/potato-libary.png" alt="Potato Library Screenshot">
+						</a>
+						<div class="uk-overlay uk-overlay-primary uk-position-bottom">
+							<h3 class="uk-heading">
+								<a href="https://gitlab.com/spe-potato/potato-library">
+									Potato Library
+								</a>
+							</h3>
+							<p>
+								A bespoke book management system for 
+								<a href="https://p.ota.to/">Potato</a>.
+							</p>
+							<p>
+								Developed as part of a 4-person team for the Software Project Engineering unit at the University of Bristol.
+							</p>
+							<p>
+								The backend interfaces with a MySQL database to serve a REST API implemented in Spring. This Java application
+								is then deployed to the cloud. The frontend consists of static HTML using Bootstrap and Vue.js, served by the
+								internal Spring web-server - accessing and mutating the data through the REST API.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-inline">
+						<a href="https://gitlab.com/spe-potato/potato-library">
+							<img src="images/gameoflife.png" alt="Game of Life Screenshot" style="width:100%">
+						</a>
+						<div class="uk-overlay uk-overlay-primary uk-position-bottom">
+							<h3 class="uk-heading">
+								Concurrent Game of Life
+							</h3>
+							<p>
+								A concurrent game of life implementation designed to run on a limited piece of hardware.
+							</p>
+							<p>
+								Developed as part of a 2-person team for the Concurrent Computing unit at the University of Bristol.
+							</p>
+							<p>
+								This game of life implementation was written in
+								<a href="https://en.wikipedia.org/wiki/XC_(programming_language)">XC</a>
+								and designed to run on the XMOS xCORE-200 eXplorer. The program runs concurrently across tiles, utilising
+								channels for cross-thread communication. Hardware memory limitations posed interesting challenges, with solutions
+								such as packing the individual "cells" into individual bits of 32/16-bit integers to be as memory-efficient as
+								possible. Each turn, the board is split up into rows of these packed cells which are then distributed across
+								workers for processing, then returned to the distributor and consolidated back into a single board each turn.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
