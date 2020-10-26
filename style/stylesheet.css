@@ -1,0 +1,40 @@
+@font-face {
+    font-family: TeXGyreCursor;
+    src: url('texgyrecursor-regular.woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: TeXGyreCursor;
+    src: url('texgyrecursor-bold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(12, 17, 20);
+    color: rgb(252, 252, 252);
+    padding-left: 5em;
+    padding-top: 5em;
+    font-family: TeXGyreCursor;
+    font-size: 1.5em;
+}
+
+h1 {
+    color: rgb(255, 182, 193);
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: rgb(252, 169, 184);
+    font-weight: bold;
+    text-decoration: none;
+}
